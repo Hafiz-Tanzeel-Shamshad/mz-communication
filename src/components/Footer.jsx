@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import Logo from "./Logo"
 
 export default function Footer() {
   return (
@@ -9,13 +10,8 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8">
           <div className="sm:col-span-2">
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-primary rounded-xl flex items-center justify-center shrink-0">
-                <span className="text-white font-bold text-lg">MZ</span>
-              </div>
-              <span className="text-lg sm:text-xl font-bold" style={{ color: "var(--text-main)" }}>
-                MZ Communication
-              </span>
+            <div className="mb-4">
+              <Logo size="md" />
             </div>
             <p className="text-sm leading-relaxed" style={{ color: "var(--text-secondary)" }}>
               Your trusted destination for premium smartphones. We offer the latest iPhones and Android devices

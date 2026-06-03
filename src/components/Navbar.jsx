@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion"
 import { MagnifyingGlassIcon, SunIcon, MoonIcon, Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline"
 import { useTheme } from "../context/ThemeContext"
 import { useProducts } from "../context/ProductContext"
+import Logo from "./Logo"
 
 export default function Navbar() {
   const { dark, toggleTheme } = useTheme()
@@ -29,13 +30,8 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <Link to="/" className="flex items-center gap-2 shrink-0">
-            <div className="w-10 h-10 bg-primary rounded-xl flex items-center justify-center">
-              <span className="text-white font-bold text-lg">MZ</span>
-            </div>
-            <span className="text-xl font-bold hidden sm:block" style={{ color: "var(--text-main)" }}>
-              MZ Communication
-            </span>
+          <Link to="/" className="flex items-center shrink-0">
+            <Logo size="sm" />
           </Link>
 
           <div className="hidden md:flex items-center gap-6">
