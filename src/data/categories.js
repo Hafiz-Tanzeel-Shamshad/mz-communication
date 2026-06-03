@@ -1,0 +1,77 @@
+export const categories = [
+  {
+    id: "iphone",
+    name: "iPhone",
+    slug: "iphone",
+    description: "Apple iPhone – Premium smartphones with cutting-edge technology",
+    image: "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-16-pro-max-2.jpg",
+    brands: ["Apple"],
+  },
+  {
+    id: "android",
+    name: "Android",
+    slug: "android",
+    description: "Android phones – Innovation across every price range",
+    image: "https://www.androidheadlines.com/wp-content/uploads/2025/01/Samsung-Galaxy-S25-Ultra-official-render-1-1420x1420.webp",
+    brands: ["Google Pixel", "Samsung", "Redmi", "Infinix", "Tecno", "OnePlus"],
+  },
+]
+
+export const brands = [
+  {
+    id: "apple",
+    name: "Apple",
+    slug: "apple",
+    category: "iphone",
+    logo: "https://cdn4.iconfinder.com/data/icons/flat-brand-logo-2/512/apple-512.png",
+    description: "iPhone – The ultimate smartphone experience",
+  },
+  {
+    id: "google-pixel",
+    name: "Google Pixel",
+    slug: "google-pixel",
+    category: "android",
+    logo: "https://cdn4.iconfinder.com/data/icons/flat-brand-logo-2/512/google-512.png",
+    description: "Pixel – The phone made by Google",
+  },
+  {
+    id: "samsung",
+    name: "Samsung",
+    slug: "samsung",
+    category: "android",
+    logo: "https://cdn4.iconfinder.com/data/icons/flat-brand-logo-2/512/samsung-512.png",
+    description: "Samsung Galaxy – Innovation for everyone",
+  },
+  {
+    id: "redmi",
+    name: "Redmi",
+    slug: "redmi",
+    category: "android",
+    logo: "https://cdn4.iconfinder.com/data/icons/flat-brand-logo-2/512/xiaomi-512.png",
+    description: "Redmi – Flagship-level features at affordable prices",
+  },
+  {
+    id: "infinix",
+    name: "Infinix",
+    slug: "infinix",
+    category: "android",
+    logo: "https://placehold.co/64x64/2563EB/ffffff?text=IN",
+    description: "Infinix – Style meets performance",
+  },
+  {
+    id: "tecno",
+    name: "Tecno",
+    slug: "tecno",
+    category: "android",
+    logo: "https://placehold.co/64x64/06B6D4/ffffff?text=TE",
+    description: "Tecno – Mobile technology for everyone",
+  },
+  {
+    id: "oneplus",
+    name: "OnePlus",
+    slug: "oneplus",
+    category: "android",
+    logo: "https://cdn4.iconfinder.com/data/icons/flat-brand-logo-2/512/oneplus-512.png",
+    description: "OnePlus – Never Settle",
+  },
+]
