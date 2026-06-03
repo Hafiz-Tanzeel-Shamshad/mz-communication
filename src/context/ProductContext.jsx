@@ -5,8 +5,21 @@ const ProductContext = createContext()
 
 export function ProductProvider({ children }) {
   const [products, setProducts] = useState(() => {
-    const saved = localStorage.getItem("mz-products")
-    return saved ? JSON.parse(saved) : initialProducts
+    try {
+      const saved = localStorage.getItem("mz-products")
+      if (!saved) return initialProducts
+      const parsed = JSON.parse(saved)
+      const merged = initialProducts.map((initial) => {
+        const modified = parsed.find((p) => p.id === initial.id)
+        return modified ? { ...initial, ...modified } : initial
+      })
+      const newProducts = parsed.filter(
+        (p) => !initialProducts.some((ip) => ip.id === p.id)
+      )
+      return [...merged, ...newProducts]
+    } catch {
+      return initialProducts
+    }
   })
   const [searchQuery, setSearchQuery] = useState("")
 
