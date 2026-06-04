@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom"
 import { ThemeProvider } from "./context/ThemeContext"
 import { ProductProvider } from "./context/ProductContext"
 import Layout from "./components/Layout"
+import ScrollToTop from "./components/ScrollToTop"
 import Home from "./pages/Home"
 import CategoryPage from "./pages/CategoryPage"
 import BrandPage from "./pages/BrandPage"
@@ -16,6 +17,7 @@ export default function App() {
     <ThemeProvider>
       <ProductProvider>
         <BrowserRouter>
+          <ScrollToTop />
           <Routes>
             <Route element={<Layout />}>
               <Route path="/" element={<Home />} />
