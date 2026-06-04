@@ -33,7 +33,7 @@ export default function AdminDashboard() {
               transition={{ duration: 0.3, delay: i * 0.08 }}
               className="card p-5"
             >
-              <div className={`w-10 h-10 rounded-xl bg-gradient-to-br ${stat.color} flex items-center justify-center mb-3`}>
+                <div className={`w-10 h-10 rounded-xl bg-linear-to-br ${stat.color} flex items-center justify-center mb-3`}>
                 <span className="text-white font-bold">{stat.value}</span>
               </div>
               <p className="text-sm font-medium" style={{ color: "var(--text-secondary)" }}>{stat.label}</p>
