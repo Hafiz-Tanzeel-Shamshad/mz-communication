@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div>
       <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-linear-to-br from-primary/5 via-transparent to-accent/5" />
+        <div className="absolute inset-0 bg-linear-to-br from-primary/5 via-transparent to-accent/5 pointer-events-none" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-24">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <motion.div
@@ -45,7 +45,7 @@ export default function Home() {
               className="hidden md:block"
             >
               <div className="relative">
-                <div className="absolute -inset-4 bg-linear-to-r from-primary/20 to-accent/20 rounded-3xl blur-2xl" />
+                <div className="absolute -inset-4 bg-linear-to-r from-primary/20 to-accent/20 rounded-3xl blur-2xl pointer-events-none" />
                 <img
                   src="https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-16-pro-max-2.jpg"
                   alt="iPhone 16 Pro"
