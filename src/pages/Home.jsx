@@ -2,6 +2,7 @@ import { Link } from "react-router-dom"
 import { motion } from "framer-motion"
 import { getCategories, getFeaturedProducts } from "../data/products"
 import ProductCard from "../components/ProductCard"
+import UrgentOffer from "../components/UrgentOffer"
 
 const categories = getCategories()
 const featuredProducts = getFeaturedProducts()
@@ -56,6 +57,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <UrgentOffer />
 
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
         <div className="text-center mb-8 sm:mb-12">
