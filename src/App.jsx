@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom"
 import { ThemeProvider } from "./context/ThemeContext"
 import { ProductProvider } from "./context/ProductContext"
 import Layout from "./components/Layout"
@@ -20,6 +20,7 @@ export default function App() {
             <Route element={<Layout />}>
               <Route path="/" element={<Home />} />
               <Route path="/search" element={<SearchPage />} />
+              <Route path="/iphone" element={<Navigate to="/iphone/apple" replace />} />
               <Route path="/:category" element={<CategoryPage />} />
               <Route path="/:category/:brand" element={<BrandPage />} />
               <Route path="/product/:id" element={<ProductDetail />} />

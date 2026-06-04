@@ -28,7 +28,7 @@ export default function Home() {
                 Quality guaranteed, best prices across Pakistan.
               </p>
               <div className="flex flex-wrap gap-3 sm:gap-4 mt-8">
-                <Link to="/iphone" className="btn-primary inline-flex items-center gap-2">
+                <Link to="/iphone/apple" className="btn-primary inline-flex items-center gap-2">
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
                   Shop iPhone
                 </Link>

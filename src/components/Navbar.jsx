@@ -52,7 +52,7 @@ export default function Navbar() {
               />
             </div>
 
-            <Link to="/iphone" className="font-medium text-sm transition-colors hover:text-primary" style={{ color: "var(--text-main)" }}>
+            <Link to="/iphone/apple" className="font-medium text-sm transition-colors hover:text-primary" style={{ color: "var(--text-main)" }}>
               iPhone
             </Link>
             <Link to="/android" className="font-medium text-sm transition-colors hover:text-primary" style={{ color: "var(--text-main)" }}>
@@ -116,7 +116,7 @@ export default function Navbar() {
           >
             <div className="px-4 py-4 space-y-2">
               <Link
-                to="/iphone"
+                to="/iphone/apple"
                 onClick={() => setMenuOpen(false)}
                 className="block py-3 px-4 rounded-xl font-medium text-sm"
                 style={{ background: "var(--bg-main)", color: "var(--text-main)" }}

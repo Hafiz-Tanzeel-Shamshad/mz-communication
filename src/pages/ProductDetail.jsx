@@ -30,7 +30,7 @@ export default function ProductDetail() {
         <div className="mb-4 sm:mb-6 text-xs md:text-sm" style={{ color: "var(--text-secondary)" }}>
           <Link to="/" className="hover:text-primary">Home</Link>
           <span className="mx-2">/</span>
-          <Link to={`/${product.category}`} className="hover:text-primary">
+          <Link to={product.category === "iphone" ? `/${product.category}/${product.brandSlug}` : `/${product.category}`} className="hover:text-primary">
             {product.category === "iphone" ? "iPhone" : "Android"}
           </Link>
           <span className="mx-2">/</span>

@@ -31,7 +31,7 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold mb-3 sm:mb-4" style={{ color: "var(--text-main)" }}>Shop</h3>
             <div className="space-y-2">
-              <Link to="/iphone" className="block text-sm transition-colors hover:text-primary py-1" style={{ color: "var(--text-secondary)" }}>
+              <Link to="/iphone/apple" className="block text-sm transition-colors hover:text-primary py-1" style={{ color: "var(--text-secondary)" }}>
                 iPhone
               </Link>
               <Link to="/android" className="block text-sm transition-colors hover:text-primary py-1" style={{ color: "var(--text-secondary)" }}>
